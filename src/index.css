@@ -1,0 +1,193 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  font-family: Cascadia Code;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+html,
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  place-content: center;
+
+}
+
+#root {
+  min-height: 100vh;
+  height: fit-content;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.test {
+  background-color: aliceblue;
+}
+
+
+@media (min-width: 1024px) {
+  .test {
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    scroll-snap-align: center;
+    color: black
+  }
+}
+
+.animated-heading {
+  letter-spacing: 2px;
+}
+
+.animated-heading::after,
+.animated-heading::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.animated-heading::after {
+  background-color: aliceblue;
+  animation: writer 2s ease-in forwards;
+}
+
+@keyframes writer {
+  to {
+    left: 100%
+  }
+}
+
+.hero {
+  opacity: 0;
+  transform: translateY(-30%);
+  animation: slideDown .5s 2s ease-in forwards;
+}
+
+
+.welcome {
+  font-weight: 800;
+  margin-top: 5px;
+  opacity: 0;
+  transform: translateY(50%);
+  animation: slideUp 0.5s 2.5s ease-in both;
+}
+
+@keyframes slideUp {
+  to {
+    opacity: 100;
+    transform: translateY(2%);
+  }
+}
+
+@keyframes slideDown {
+  to {
+    opacity: 100;
+    transform: translateY(-20%);
+    filter: drop-shadow(0 0 10px black);
+  }
+}
+
+p:hover .icon {
+  filter: drop-shadow(0 0 10px rgb(251, 191, 36))
+}
+
+.icon {
+  filter: drop-shadow(0 0 20px gold);
+}
+
+div>a:hover {
+  animation: translateUp 0.5s ease forwards
+}
+
+.goUpBtn:hover {
+  color: aliceblue;
+  animation: translateUp 0.3s ease forwards
+}
+
+@keyframes translateUp {
+  to {
+    transform: translateY(-15%);
+  }
+}
+
+div>a:focus {
+  filter: drop-shadow(0 0 10px black);
+  color: aliceblue;
+}
+
+.logo {
+  transform: scale(4);
+}
+
+.htmlIco:hover {
+  filter: drop-shadow(0 10px 10px rgb(208, 66, 66));
+  transition-duration: 300ms;
+}
+
+.cssIco:hover {
+  filter: drop-shadow(0 10px 10px rgb(81, 120, 226));
+  transition-duration: 300ms;
+}
+
+.jsIco:hover {
+  filter: drop-shadow(0 10px 10px rgb(175, 159, 71));
+  transition-duration: 300ms;
+}
+
+.reactIco:hover {
+  filter: drop-shadow(0 10px 10px rgb(66, 184, 208));
+  transition-duration: 300ms;
+}
+
+.viteIco:hover {
+  filter: drop-shadow(0 10px 10px rgb(167, 94, 226));
+  transition-duration: 300ms;
+}
+
+.tailwindIco:hover {
+  filter: drop-shadow(0 10px 10px rgb(69, 156, 162));
+  transition-duration: 300ms;
+}
+
+.gitIco:hover {
+  filter: drop-shadow(0 10px 10px rgb(206, 126, 126));
+  transition-duration: 300ms;
+}
+
+.githubIco:hover {
+  filter: drop-shadow(0 10px 10px rgb(33, 32, 32));
+  transition-duration: 300ms;
+}
+
+
+@media (min-width:640px) {
+  .projectCard:hover div {
+    transform: translateY(0);
+    transition: transform .5s;
+  }
+}
+
+/* #home {
+  background-image: url('../public/wall.jpg');
+  background-position: center;
+  background-size: cover ;
+} */
