@@ -1,5 +1,5 @@
 import { NavLink, Navigate } from "react-router-dom";
-import { FaChevronUp } from "react-icons/fa";
+import { FaChevronUp, FaPaperPlane } from "react-icons/fa";
 import Footer from "./Footer";
 import { useForm } from "react-hook-form";
 
@@ -63,7 +63,8 @@ function Contact() {
               placeholder="Your message..."
               {...register("text")}
             />
-            <button className="border-2 border-solid border-amber-300 mt-4 w-48 h-12 mx-auto hover:bg-amber-300 hover:text-slate-100 font-bold text-lg rounded-lg transition duration-300">
+            <button className="border-2 border-solid border-amber-300 mt-4 w-full h-12 bg-amber-300 shadow  hover:bg-amber-400 hover:shadow hover:shadow-black font-semibold text-lg rounded-lg transition flex place-content-center items-center gap-2 ">
+              <FaPaperPlane />
               Send Message
             </button>
           </form>

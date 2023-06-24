@@ -30,7 +30,7 @@ function Footer() {
           <FaInstagram />
         </a>
       </div>
-      <p className="text-base flex gap-1 items-center font-extrabold">
+      <p className="text-base flex gap-1 items-center font-semibold">
         <FaCopyright />
         2023 Made with ❤ by ZanganatorDev
       </p>
