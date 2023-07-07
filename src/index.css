@@ -16,6 +16,7 @@ body {
   padding: 0;
   align-items: center;
   place-content: center;
+  background-color: black;
 
 }
 
@@ -34,23 +35,8 @@ body {
 }
 
 .test {
-  background-color: aliceblue;
   min-height: 100vh;
 }
-
-
-/* @media (min-width: 1024px) {
-  .test {
-    height: 100vh;
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
-    overflow-y: auto;
-    overflow-x: hidden;
-    scrollbar-width: none;
-    scroll-snap-align: center;
-    color: black
-  }
-} */
 
 .animated-heading {
   letter-spacing: 2px;
@@ -67,7 +53,7 @@ body {
 }
 
 .animated-heading::after {
-  background-color: aliceblue;
+  background-color: rgb(15 23 42);
   animation: writer 2s ease-in forwards;
 }
 
@@ -106,21 +92,14 @@ body {
   }
 }
 
-.card:hover .icon {
-  filter: drop-shadow(0 0 10px rgb(245, 207, 34))
-}
-
-.icon {
-  filter: drop-shadow(0 0 20px rgba(255, 217, 0, 0.285));
-}
-
 div>a:hover {
   animation: translateUp 0.5s ease forwards;
   transition: 0.2s;
 }
 
 .goUpBtn:hover {
-  color: aliceblue;
+  background-color: gold;
+  color: black;
   animation: translateUp 0.3s ease forwards
 }
 
@@ -131,13 +110,13 @@ div>a:hover {
 }
 
 .active-link {
-  filter: drop-shadow(0 0 10px black);
-  color: gold;
-  background-color: rgba(0, 0, 0, 0.597);
+  filter: drop-shadow(0 0 5px white);
+  color: rgb(251 191 36);
 }
 
 .logo {
   transform: scale(4);
+  filter: sepia(100%);
 }
 
 .htmlIco:hover {
@@ -176,7 +155,7 @@ div>a:hover {
 }
 
 .githubIco:hover {
-  filter: drop-shadow(0 10px 10px rgb(33, 32, 32));
+  filter: drop-shadow(0 10px 10px rgb(228, 221, 221));
   transition-duration: 300ms;
 }
 
@@ -194,8 +173,38 @@ div>a:hover {
   }
 }
 
-/* #home {
-  background-image: url('../public/wall.jpg');
-  background-position: center;
-  background-size: cover ;
-} */
+  .hover-1:hover {
+    transition: .3s;
+    transform: scale(1.2);
+    color: rgb(251 191 36);
+  }
+
+  .hover-1:hover a {
+    transition: .3s;
+    filter: drop-shadow(0 0 5px white);
+  }
+
+.animated-buttons {
+  animation: slideUp 0.5s 3s ease-in forwards;
+}
+
+.infocard:hover p {
+  filter: drop-shadow(0 0 5px white);
+  transition: 0.3s;
+}
+
+.name-span {
+
+  filter: drop-shadow(0 0 1px white);
+
+}
+
+.scroll-hook {
+  animation: ease-enter 1s 3.5s ease forwards ;
+}
+
+@keyframes ease-enter {
+  to {
+    opacity: 50%;
+  }
+}

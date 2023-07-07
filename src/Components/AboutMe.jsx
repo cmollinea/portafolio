@@ -1,61 +1,56 @@
+import InfoCard from "./InfoCard";
+
 function AboutMe() {
   return (
     <section
       id="about-me"
-      className="test flex flex-col max-sm:mt-12 items-center place-content-center "
+      className="test bg-slate-300/20 flex flex-col max-sm:mt-12 items-center place-content-center "
     >
-      <div className="sm:mt-16">
-        <h1 className="text-center text-2xl">About Me </h1>
+      <div className="py-16 flex flex-col items-center">
+        <h1 className="text-center flex flex-col items-center mb-6 text-5xl font-light name-span">
+          About Me{" "}
+          <hr className="w-[90%] border-2 border-yellow-400 mt-4 name-span" />
+        </h1>
         <div className="flex place-content-center  flex-wrap text-center p-6 lg:flex-row gap-10 mx-4">
-          <div className="card lg:p-4 border-2 p-6 border-solid place-content-center  duration-300 border-amber-300/50 sm:w-2/5 hover:shadow-lg cursor-default hover:shadow-amber-400/50 py-4 rounded-xl">
-            {" "}
-            <span className="text-4xl  place-content-center flex p-2 rounded-full icon  mx-auto w-14  h-fit ">
-              <img src="../../public/Portafolio/../../public/Portafolio/university-svgrepo-com.svg" />
-            </span>{" "}
-            <p>
-              Mi nombre es Carlos Yoan Mollinea Perez,soy cubano, tengo 23 años,
-              ingeniero electrico graduado en la Universidad central Marta Abreu
-              de las Villas, pero mi pasion por la programacion y las IT me
-              empujo a aprender desarrollo web de manera autodidacta
-            </p>
-          </div>
-          <div className="card lg:p-4 border-2 p-6 border-solid duration-300 border-amber-300/50 sm:w-2/5 hover:shadow-lg cursor-default hover:shadow-amber-400/50 py-4 rounded-xl">
-            {" "}
-            <span className="text-4xl  place-content-center flex p-2 rounded-full icon  mx-auto w-16 h-fit ">
-              <img src="../../public/Portafolio/programming-code-signs-svgrepo-com.svg" />
-            </span>
-            <p>
-              Me fascina React, junto a el he aprendido a usar librerias como
-              zustand, TanStack/react-query, React-Router, React-Hook-Form por
-              mencionar algunas. Tambien he de agregar que soy muy fan de CSS y
-              de las interfaces limpias y minuciosamente diseñadas.
-            </p>
-          </div>
-          <div className="card lg:p-4 border-2 p-6 border-solid duration-300 border-amber-300/50 sm:w-2/5 hover:shadow-lg cursor-default hover:shadow-amber-400/50 py-4 rounded-xl">
-            {" "}
-            <span className="text-4xl  place-content-center flex p-2 rounded-full icon  mx-auto w-16  h-fit ">
-              <img src="../../public/Portafolio/communication-communication-svgrepo-com.svg" />
-            </span>{" "}
-            <p>
-              Actualmente poseo un nivel de ingles suficiente como para
-              comunicarme con un equipo de trabajo, soy buen entendedor, todas
-              las criticas las tomo como constructivas y solo me enfoco en limar
-              asperezas. Estoy dispuesto a aprender nuevas tecnologias ya que el
-              saber no ocupa espacio.
-            </p>
-          </div>
-          <div className="card lg:p-4 border-2 p-6 border-solid duration-300 border-amber-300/50 sm:w-2/5 hover:shadow-lg cursor-default hover:shadow-amber-400/50 py-4 rounded-xl">
-            <span className="text-4xl  place-content-center flex p-2 rounded-full icon  mx-auto w-14  h-fit ">
-              <img src="../../public/Portafolio/design-skills-svgrepo-com.svg" />
-            </span>
-            <p>
-              En un futuro cercano quiero aprender a usar TypeScript, asi como
-              NextJS y alguna libreria de testing, siendo estos mis metas ahora
-              mismo, dedico todo mi tiempo libre a aprender nuevas cosas, y
-              navegar en la WWW buscando interfaces que me cautiven para
-              intentar recrearlas por mi cuenta
-            </p>
-          </div>
+          <InfoCard
+            imageSource={
+              "../../public/Portafolio/../../public/Portafolio/university-svgrepo-com.svg"
+            }
+          >
+            Mi nombre es Carlos Yoan, soy cubano, tengo 23 años, ingeniero
+            electrico graduado en la Universidad central Marta Abreu de las
+            Villas, pero mi pasion por la programacion y las IT me condujo a
+            aprender desarrollo web de manera autodidacta
+          </InfoCard>
+          <InfoCard
+            imageSource={
+              "../../public/Portafolio/programming-code-signs-svgrepo-com.svg"
+            }
+          >
+            Me fascina React, junto a el he aprendido a usar librerias como
+            zustand, react-query, React-Router, React-Hook-Form por mencionar
+            algunas. Tambien he de agregar que soy muy fan de CSS y de las
+            interfaces limpias y minuciosamente diseñadas.
+          </InfoCard>
+          <InfoCard
+            imageSource={
+              "../../public/Portafolio/communication-communication-svgrepo-com.svg"
+            }
+          >
+            Actualmente poseo un nivel de ingles suficiente como para
+            comunicarme, soy buen entendedor, todas las criticas las tomo como
+            constructivas. Estoy dispuesto a aprender nuevas tecnologias ya que
+            el saber no ocupa espacio.
+          </InfoCard>
+          <InfoCard
+            imageSource={
+              "../../public/Portafolio/design-skills-svgrepo-com.svg"
+            }
+          >
+            Mis actuales metas son añadir a mi stack TypeScript, NextJS y alguna
+            libreria de testing. Dedico todo mi tiempo libre a estudiar,
+            aprender nuevas cosas, y practicar creando pequeños proyectos.
+          </InfoCard>
         </div>
       </div>
     </section>

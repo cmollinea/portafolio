@@ -1,18 +1,16 @@
-import {
-  FaReact,
-  FaJs,
-  FaHtml5,
-  FaCss3,
-  FaHackerNewsSquare,
-} from "react-icons/fa";
+import { FaReact, FaJs, FaHtml5, FaCss3, FaWind } from "react-icons/fa";
+import {} from "react-icons/di";
 import ProjectCard from "./ProjectCard";
 
 function MyWork() {
   return (
-    <section id="my-work" className="min-h-screen test">
-      <div className="flex flex-col items-center p-4 place-content-center">
-        <h1 className="text-center mt-16 text-2xl">My Work </h1>
-        <div className="flex flex-wrap items-center place-content-center flex-col md:grid-cols-2 md:grid max-md:grid max-md:grid-cols-1 md:gap-10 md:p-10  h-full gap-10 mt-10 ">
+    <section id="my-work" className="min-h-screen bg-slate-300/20  test">
+      <div className="flex py-16 flex-col items-center p-4 place-content-center">
+        <h1 className="text-center flex flex-col items-center mb-6 text-5xl font-light name-span">
+          My Work{" "}
+          <hr className="w-[90%] border-2 border-yellow-400 mt-4 name-span" />
+        </h1>
+        <div className="flex flex-wrap items-center place-content-center md:gap-10 md:px-16 mt-10 mb-16 h-full gap-10 ">
           <ProjectCard
             icons={[
               <FaHtml5 key="1" />,
@@ -52,13 +50,12 @@ function MyWork() {
               <FaReact key="3" />,
               <FaJs key="4" />,
             ]}
-            source="../../public/3.JPG"
-            heading="Star Wars miniPedia"
+            source="../../public/3.png"
+            heading="Country Quiz"
             description={
               <>
-                A tiny web made with react and react router inspired on{" "}
-                <i>@moureDev month challenge</i> consuming <b>SWAPI</b>. Styled
-                with tailwindcss.
+                A tiny game made with react and tailwindCSS, using
+                RestCountriesApi.
               </>
             }
           />
@@ -68,15 +65,14 @@ function MyWork() {
               <FaCss3 key="2" />,
               <FaReact key="3" />,
               <FaJs key="4" />,
-              <FaHackerNewsSquare key="5" />,
+              <FaWind key="5" />,
             ]}
-            source="../../public/4.JPG"
+            source="../../public/4.png"
             heading="Dummy E-Commerce"
             description={
               <>
-                A responsive e-commerce using <b>JSON PLaceholder API</b> made
-                with react, react router and tailwindcss. Filters, Pop-ups and
-                cart were includes.
+                A responsive dummy-e-commerce using <b>JSON PLaceholder API</b>{" "}
+                made with react, react router and tailwindcss.des.
               </>
             }
           />
