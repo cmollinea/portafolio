@@ -1,5 +1,7 @@
 /* eslint-disable react/prop-types */
-function ProjectCard({ icons, source, heading, description }) {
+import { FaExternalLinkAlt } from "react-icons/fa";
+
+function ProjectCard({ icons, source, heading, description, demo }) {
   return (
     <div className="h-52 rounded-2xl relative overflow-hidden max-w-[380px] w-full md:h-48 projectCard transition-all shadow-lg shadow-black/80">
       <img className="h-full w-full transition-all duration-500" src={source} />
@@ -14,11 +16,20 @@ function ProjectCard({ icons, source, heading, description }) {
           {icons.map((ico, index) => (
             <div
               key={index}
-              className=" w-14 h-8 items-center text-xl flex justify-center  bg-black text-amber-300 rounded-2xl transition duration-500  hover:text-slate-100 hover:bg-slate-900"
+              className=" w-14 h-8 items-center text-xl flex justify-center  bg-black text-amber-300 rounded-2xl transition duration-500  hover:text-slate-100"
             >
               {ico}
             </div>
           ))}
+          {demo && (
+            <a
+              target="blank"
+              href={demo}
+              className=" w-full cursor-pointer h-8 text-xl flex items-center font-bold justify-center  bg-black text-amber-300 rounded-2xl transition duration-500  hover:text-slate-100"
+            >
+              Demo
+            </a>
+          )}
         </div>
       </div>
     </div>

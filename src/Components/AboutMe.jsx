@@ -1,4 +1,5 @@
 import InfoCard from "./InfoCard";
+import MarkedText from "./MarkedText";
 
 function AboutMe() {
   return (
@@ -11,45 +12,38 @@ function AboutMe() {
           About Me{" "}
           <hr className="w-[90%] border-2 border-yellow-400 mt-4 name-span" />
         </h1>
-        <div className="flex place-content-center  flex-wrap text-center p-6 lg:flex-row gap-10 mx-4">
-          <InfoCard
-            imageSource={
-              "../../public/Portafolio/../../public/Portafolio/university-svgrepo-com.svg"
-            }
-          >
-            Mi nombre es Carlos Yoan, soy cubano, tengo 23 años, ingeniero
-            electrico graduado en la Universidad central Marta Abreu de las
-            Villas, pero mi pasion por la programacion y las IT me condujo a
-            aprender desarrollo web de manera autodidacta
+        <div className="flex place-content-center flex-wrap text-center p-6 lg:flex-row gap-10 mx-4">
+          <InfoCard imageSource={"images/university-svgrepo-com.svg"}>
+            My name is Carlos Yoan, I am Cuban, 23 y/o,{" "}
+            <MarkedText>electrical engineer </MarkedText>
+            graduated from Marta Abreu de las Villas Central University, but my
+            passion for <MarkedText>programming</MarkedText> and the ITs led me
+            to learn web development <MarkedText>self-taught.</MarkedText>
           </InfoCard>
           <InfoCard
-            imageSource={
-              "../../public/Portafolio/programming-code-signs-svgrepo-com.svg"
-            }
+            imageSource={"images/programming-code-signs-svgrepo-com.svg"}
           >
-            Me fascina React, junto a el he aprendido a usar librerias como
-            zustand, react-query, React-Router, React-Hook-Form por mencionar
-            algunas. Tambien he de agregar que soy muy fan de CSS y de las
-            interfaces limpias y minuciosamente diseñadas.
+            <MarkedText>Love React!</MarkedText> Along with it I have learned to
+            use libraries such as zustand, react-query, React-Router,
+            React-Hook-Form to name a few. Big fan of CSS, TailwindCSS,{" "}
+            <MarkedText>clean interfaces</MarkedText>, as well as{" "}
+            <MarkedText>great UXs.</MarkedText>
           </InfoCard>
           <InfoCard
-            imageSource={
-              "../../public/Portafolio/communication-communication-svgrepo-com.svg"
-            }
+            imageSource={"images/communication-communication-svgrepo-com.svg"}
           >
-            Actualmente poseo un nivel de ingles suficiente como para
-            comunicarme, soy buen entendedor, todas las criticas las tomo como
-            constructivas. Estoy dispuesto a aprender nuevas tecnologias ya que
-            el saber no ocupa espacio.
+            Currently I have a <MarkedText>sufficient</MarkedText> level of
+            <MarkedText> English</MarkedText> to communicate.{" "}
+            <MarkedText>Proactive</MarkedText>,
+            <MarkedText> good listener</MarkedText>, prepared to learn{" "}
+            <MarkedText>new technologies</MarkedText> and give my best in the
+            attempt.
           </InfoCard>
-          <InfoCard
-            imageSource={
-              "../../public/Portafolio/design-skills-svgrepo-com.svg"
-            }
-          >
-            Mis actuales metas son añadir a mi stack TypeScript, NextJS y alguna
-            libreria de testing. Dedico todo mi tiempo libre a estudiar,
-            aprender nuevas cosas, y practicar creando pequeños proyectos.
+          <InfoCard imageSource={"images/design-skills-svgrepo-com.svg"}>
+            My current goals are to add TypeScript, NextJS and some testing
+            libraries to my stack. Spend all my free time{" "}
+            <MarkedText>studying</MarkedText>, <MarkedText>learning</MarkedText>{" "}
+            new things, and <MarkedText>practicing.</MarkedText>
           </InfoCard>
         </div>
       </div>

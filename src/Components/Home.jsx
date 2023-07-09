@@ -6,8 +6,8 @@ function Home({ didScrolled }) {
       <div className="absolute flex flex-col items-center place-content-center left-0 right-0 top-12 bottom-0">
         <img
           className="h-48 w-48 rounded-full hero"
-          src="../public/hero.JPG"
-          alt=""
+          src="images/hero.JPG"
+          alt="hero"
         />
         <h2 className="animated-heading overflow-hidden text-center text-4xl w-fit h-16 max-sm:text-xl font-semibold relative">
           {" "}

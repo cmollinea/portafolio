@@ -6,7 +6,7 @@ function NavBar({ navIsOpen, setNavIsOpen }) {
     <nav className="navbar  bg-black/80 text-gray-100 flex justify-between gap-4 items-center fixed h-12 z-40 left-0 top-0 right-0 backdrop-blur-sm">
       <h1 className="lg:text-xl text-base overflow-hidden  w-fit ml-4 flex font-extrabold items-center">
         <span className="w-10 overflow-hidden rounded-full">
-          <img className="logo" src="../../public/Portafolio/CU.png" />
+          <img className="logo" src="images/CU.png" alt="logo" />
         </span>
         <p className="ml-2 flex items-center gap-1 font-semibold text-lg  max-lg:text-sm">
           ReactJs Dev & Electrical Engineer{" "}

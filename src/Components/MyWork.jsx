@@ -18,7 +18,7 @@ function MyWork() {
               <FaReact key="3" />,
               <FaJs key="4" />,
             ]}
-            source="../../public/1.JPG"
+            source="images/1.png"
             heading="Rick & Morty Explorer"
             description={
               <>
@@ -26,6 +26,7 @@ function MyWork() {
                 to explore the characters of rick and morty TV series.
               </>
             }
+            demo="https:///rick-and-morty-explorer.vercel.app"
           />
           <ProjectCard
             icons={[
@@ -34,12 +35,13 @@ function MyWork() {
               <FaReact key="3" />,
               <FaJs key="4" />,
             ]}
-            source="../../public/2.JPG"
+            source="images/2.png"
+            demo="https://fancy-movie-explorer.vercel.app"
             heading="The Movie Explorer DB"
             description={
               <>
                 A fancy web made with react and consuming the <b>OMDB Api</b>{" "}
-                for search movies and TV sows and et som information about them
+                for search information about movies and TV shows.
               </>
             }
           />
@@ -50,7 +52,7 @@ function MyWork() {
               <FaReact key="3" />,
               <FaJs key="4" />,
             ]}
-            source="../../public/3.png"
+            source="images/3.png"
             heading="Country Quiz"
             description={
               <>
@@ -65,14 +67,13 @@ function MyWork() {
               <FaCss3 key="2" />,
               <FaReact key="3" />,
               <FaJs key="4" />,
-              <FaWind key="5" />,
             ]}
-            source="../../public/4.png"
+            source="images/4.png"
             heading="Dummy E-Commerce"
             description={
               <>
                 A responsive dummy-e-commerce using <b>JSON PLaceholder API</b>{" "}
-                made with react, react router and tailwindcss.des.
+                made with react, react router and tailwindCSS.
               </>
             }
           />

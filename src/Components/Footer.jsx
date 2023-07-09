@@ -43,6 +43,12 @@ function Footer() {
           <FaInstagram />
         </a>
       </div>
+      <a
+        className="text-xs underline hover:text-yellow-400 transition-colors"
+        href="https://stiryset.com/work"
+      >
+        Work ilustrations by Storyset
+      </a>
       <p className="text-base flex gap-1 items-center font-semibold">
         <FaCopyright />
         2023 Made with 💛 by ProcastinatorDev
