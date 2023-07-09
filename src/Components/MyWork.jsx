@@ -36,7 +36,7 @@ function MyWork() {
               <FaJs key="4" />,
             ]}
             source="images/2.png"
-            demo="https://fancy-movie-explorer.vercel.app"
+            demo="https://fancy-movie-explorerr.vercel.app"
             heading="The Movie Explorer DB"
             description={
               <>
