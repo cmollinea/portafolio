@@ -26,7 +26,7 @@ function MyWork() {
                 to explore the characters of rick and morty TV series.
               </>
             }
-            demo="https:///rick-and-morty-explorer.vercel.app"
+            demo="https:///rick-and-morty-explorerr.vercel.app"
           />
           <ProjectCard
             icons={[
@@ -36,7 +36,7 @@ function MyWork() {
               <FaJs key="4" />,
             ]}
             source="images/2.png"
-            demo="https://fancy-movie-explorerr.vercel.app"
+            demo="https://fancy-movie-explorer.vercel.app"
             heading="The Movie Explorer DB"
             description={
               <>
