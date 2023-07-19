@@ -1,5 +1,4 @@
 import {
-  FaLinkedin,
   FaTwitter,
   FaDiscord,
   FaTelegram,
@@ -14,7 +13,7 @@ function Footer() {
         <a
           href="https://www.twitter.com/on3on3"
           target="blank"
-          className="cursor-pointer hover:text-amber-400 transition duration-300 text-3xl"
+          className="cursor-pointer hover:text-amber-400 transition duration-300 text-3xl hover:-translate-y-1"
         >
           {" "}
           <FaTwitter />
@@ -22,7 +21,7 @@ function Footer() {
         <a
           href="https://t.me/Mouse_Potat0"
           target="blank"
-          className="cursor-pointer hover:text-amber-400 transition duration-300 text-3xl"
+          className="cursor-pointer hover:text-amber-400 transition duration-300 text-3xl hover:-translate-y-1"
         >
           {" "}
           <FaTelegram />
@@ -30,7 +29,7 @@ function Footer() {
         <a
           href="https://discord.com/users/On3On3#1080"
           target="blank"
-          className="cursor-pointer hover:text-amber-400 transition duration-300 text-3xl"
+          className="cursor-pointer hover:text-amber-400 transition duration-300 text-3xl hover:-translate-y-1"
         >
           {" "}
           <FaDiscord />
@@ -38,7 +37,7 @@ function Footer() {
         <a
           href="https://instagram.com/cymollinea?igshid=NTc4MTIwNjQ2YQ=="
           target="blank"
-          className="cursor-pointer hover:text-amber-400 transition duration-300 text-3xl"
+          className="cursor-pointer hover:text-amber-400 transition duration-300 text-3xl hover:-translate-y-1"
         >
           <FaInstagram />
         </a>

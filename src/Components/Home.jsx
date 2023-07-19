@@ -24,26 +24,22 @@ function Home({ didScrolled }) {
           Welcome to my personal website.
         </h3>
         <div className="mt-8 flex max-sm:flex-col gap-4 sm:gap-6 animated-buttons opacity-0 translate-y-6 sm:translate-y-1/2">
-          <button className="p-2 bg-slate-800 text-base font-semibold max-sm:w-32 place-content-center hover:bg-black rounded-md shadow-md shadow-black hover-1 transition duration-300">
-            <a
-              href="https://github.com/cmollinea/"
-              target="blank"
-              className="flex w-full h-full gap-2 justify-center"
-            >
-              GitHub
-              <FaLink className=" my-auto" />
-            </a>
-          </button>
-          <button className="p-2 bg-slate-800 text-base font-semibold max-sm:w-32 place-content-center hover:bg-black rounded-md shadow-md shadow-black hover-1 transition duration-300">
-            <a
-              href="https://cu.linkedin.com/in/carlos-yoan-mollinea-43206827b"
-              target="blank"
-              className="flex w-full h-full gap-2 justify-center"
-            >
-              LinkedIn
-              <FaLink className=" my-auto" />
-            </a>
-          </button>
+          <a
+            className="p-2 bg-slate-800 text-base font-semibold max-sm:w-32 place-content-center hover:bg-black rounded-md shadow-md shadow-black hover-1 transition duration-300 flex w-full h-full gap-2 justify-center"
+            href="https://github.com/cmollinea/"
+            target="blank"
+          >
+            GitHub
+            <FaLink className=" my-auto" />
+          </a>
+          <a
+            className="p-2 bg-slate-800 text-base font-semibold max-sm:w-32 place-content-center hover:bg-black rounded-md shadow-md shadow-black hover-1 transition duration-300 flex w-full h-full gap-2 justify-center"
+            href="https://cu.linkedin.com/in/carlos-yoan-mollinea-43206827b"
+            target="blank"
+          >
+            LinkedIn
+            <FaLink className=" my-auto" />
+          </a>
         </div>
       </div>
       <div

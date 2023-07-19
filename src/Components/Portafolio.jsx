@@ -6,13 +6,11 @@ import Skills from "./Skills";
 import MyWork from "./MyWork";
 import Contact from "./Contact";
 import Footer from "./Footer";
-import { set } from "react-hook-form";
 
 const scroll = (sections, navLinks, didScrolled, setDidScrolled) => {
   addEventListener("scroll", () => {
     let about = document.querySelector("nav div a.about");
     if (!didScrolled && about.classList.contains("active-link")) {
-      console.log("aaaaaaaaaaaa");
       setDidScrolled(true);
     }
     sections.forEach((sec) => {
